@@ -2,7 +2,7 @@ import { defineConfig } from 'vite'
 
 export default defineConfig({
   // BASE DO GITHUB PAGES: se o repositório se chama "Universo-Alternativo"
-  base: '/',
+  base: 'Universo-Alternativo',
   
   server: {
     host: '0.0.0.0',           // permite acesso externo (celular, etc)
