@@ -70,7 +70,7 @@ document.querySelector('#app').innerHTML = `
 
     <nav class="menu">
       <a href="/">Início</a>
-      <a href="jogos.html">🎮 Jogos</a>
+      <a href="${import.meta.env.BASE_URL}jogos.html">🎮 Jogos</a>
       <a href="animes.html">📺 Animes</a>
       <a href="musica.html">🎵 Música</a>
       <a href="retro.html">📼 Retrô</a>
