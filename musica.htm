@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Música - Universo Alternativo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      document.querySelector('#app').innerHTML = `
+        <header class="topo">
+          <div class="logo">
+            <span class="logo-icon">🌌</span>
+            <div>
+              <strong>UNIVERSO</strong>
+              <span>ALTERNATIVO</span>
+            </div>
+          </div>
+          <nav class="menu">
+            <a href="/">Início</a>
+            <a href="/jogos.html">🎮 Jogos</a>
+            <a href="/animes.html">📺 Animes</a>
+            <a href="/musica.html">🎵 Música</a>
+            <a href="/retro.html">📼 Retrô</a>
+            <a href="/filmes.html">🎬 Filmes</a>
+            <a href="/tecnologia.html">💻 Tecnologia</a>
+          </nav>
+        </header>
+
+        <main>
+          <section class="conteudo-pagina">
+            <h1>🎵 Música</h1>
+            <p>Artistas, álbuns, gêneros, histórias e trilhas sonoras que marcaram gerações.</p>
+            <div class="lista-itens">
+              <div class="item-card">
+                <img src="/images/musica1.jpg" alt="Álbum 1" />
+                <h3>Nevermind</h3>
+                <p>Nirvana - 1991</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/musica2.jpg" alt="Álbum 2" />
+                <h3>Thriller</h3>
+                <p>Michael Jackson - 1982</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/musica3.jpg" alt="Álbum 3" />
+                <h3>Dark Side of the Moon</h3>
+                <p>Pink Floyd - 1973</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/musica4.jpg" alt="Álbum 4" />
+                <h3>Abbey Road</h3>
+                <p>The Beatles - 1969</p>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div class="footer-logo">🌌 Universo Alternativo</div>
+          <p>Um universo criado para quem nunca parou de explorar.</p>
+          <span>© 2026 Universo Alternativo</span>
+        </footer>
+      `
+    </script>
+  </body>
+</html>

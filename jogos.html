@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jogos - Universo Alternativo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      // Substitui o conteúdo do #app pelo conteúdo da página interna
+      document.querySelector('#app').innerHTML = `
+        <header class="topo">
+          <div class="logo">
+            <span class="logo-icon">🌌</span>
+            <div>
+              <strong>UNIVERSO</strong>
+              <span>ALTERNATIVO</span>
+            </div>
+          </div>
+          <nav class="menu">
+            <a href="/">Início</a>
+            <a href="/jogos.html">🎮 Jogos</a>
+            <a href="/animes.html">📺 Animes</a>
+            <a href="/musica.html">🎵 Música</a>
+            <a href="/retro.html">📼 Retrô</a>
+            <a href="/filmes.html">🎬 Filmes</a>
+            <a href="/tecnologia.html">💻 Tecnologia</a>
+          </nav>
+        </header>
+
+        <main>
+          <section class="conteudo-pagina">
+            <h1>🎮 Jogos</h1>
+            <p>Explore o mundo dos games: clássicos, lançamentos, indies e tudo sobre a cultura gamer.</p>
+            <div class="lista-itens">
+              <div class="item-card">
+                <img src="/images/jogo1.jpg" alt="Jogo 1" />
+                <h3>Super Mario World</h3>
+                <p>SNES - 1990</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/jogo2.jpg" alt="Jogo 2" />
+                <h3>Sonic 2</h3>
+                <p>Mega Drive - 1992</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/jogo3.jpg" alt="Jogo 3" />
+                <h3>The Legend of Zelda</h3>
+                <p>NES - 1986</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/jogo4.jpg" alt="Jogo 4" />
+                <h3>Street Fighter II</h3>
+                <p>Arcade - 1991</p>
+              </div>
+              <!-- Adicione mais itens conforme desejar -->
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div class="footer-logo">🌌 Universo Alternativo</div>
+          <p>Um universo criado para quem nunca parou de explorar.</p>
+          <span>© 2026 Universo Alternativo</span>
+        </footer>
+      `
+    </script>
+  </body>
+</html>

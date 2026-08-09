@@ -1,10 +1,4 @@
-import './style.css'
-
-// --- Função para criar o overlay de transição ---
-function criarOverlay() {
-  const overlay = document.createElement('div')
-  overlay.id = 'transition-overlay'
-  overlay.innerHTML = `
+(function(){let e=document.createElement(`link`).relList;if(e&&e.supports&&e.supports(`modulepreload`))return;for(let e of document.querySelectorAll(`link[rel="modulepreload"]`))n(e);new MutationObserver(e=>{for(let t of e)if(t.type===`childList`)for(let e of t.addedNodes)e.tagName===`LINK`&&e.rel===`modulepreload`&&n(e)}).observe(document,{childList:!0,subtree:!0});function t(e){let t={};return e.integrity&&(t.integrity=e.integrity),e.referrerPolicy&&(t.referrerPolicy=e.referrerPolicy),t.credentials=e.crossOrigin===`use-credentials`?`include`:e.crossOrigin===`anonymous`?`omit`:`same-origin`,t}function n(e){if(e.ep)return;e.ep=!0;let n=t(e);fetch(e.href,n)}})();function e(){let e=document.createElement(`div`);return e.id=`transition-overlay`,e.innerHTML=`
     <div class="portal">
       <div class="estrela"></div>
       <div class="estrela"></div>
@@ -12,53 +6,7 @@ function criarOverlay() {
       <div class="estrela"></div>
       <div class="estrela"></div>
     </div>
-  `
-  document.body.appendChild(overlay)
-  return overlay
-}
-
-const overlay = criarOverlay()
-
-// --- Função de transição (efeito de viagem) ---
-function viajarPara(destino) {
-  return new Promise((resolve) => {
-    overlay.classList.add('ativo')
-    // Animação de entrada (abertura do portal)
-    setTimeout(() => {
-      // Navega para o destino
-      window.location.href = destino
-      // A transição de saída será acionada na nova página
-      resolve()
-    }, 800) // duração do efeito (ajuste conforme CSS)
-  })
-}
-
-// --- Interceptar cliques em links internos ---
-document.addEventListener('click', (e) => {
-  const link = e.target.closest('a')
-  if (!link) return
-
-  const href = link.getAttribute('href')
-  // Ignora links com # (âncoras) ou que começam com http ou mailto
-  if (!href || href.startsWith('#') || href.startsWith('http') || href.startsWith('mailto')) return
-
-  e.preventDefault()
-  viajarPara(href)
-})
-
-// --- Se a página carregar com o overlay ativo, remove-o após a transição ---
-window.addEventListener('load', () => {
-  // Se veio de uma navegação com transição, o overlay pode estar ativo
-  // Removemos após um pequeno atraso para a animação de saída
-  if (overlay.classList.contains('ativo')) {
-    setTimeout(() => {
-      overlay.classList.remove('ativo')
-    }, 400) // tempo para desaparecer
-  }
-})
-
-// --- Renderizar a página inicial (seu conteúdo original) ---
-document.querySelector('#app').innerHTML = `
+  `,document.body.appendChild(e),e}var t=e();function n(e){return new Promise(n=>{t.classList.add(`ativo`),setTimeout(()=>{window.location.href=e,n()},800)})}document.addEventListener(`click`,e=>{let t=e.target.closest(`a`);if(!t)return;let r=t.getAttribute(`href`);!r||r.startsWith(`#`)||r.startsWith(`http`)||r.startsWith(`mailto`)||(e.preventDefault(),n(r))}),window.addEventListener(`load`,()=>{t.classList.contains(`ativo`)&&setTimeout(()=>{t.classList.remove(`ativo`)},400)}),document.querySelector(`#app`).innerHTML=`
   <header class="topo">
     <div class="logo">
       <span class="logo-icon">🌌</span>
@@ -152,4 +100,4 @@ document.querySelector('#app').innerHTML = `
     <p>Um universo criado para quem nunca parou de explorar.</p>
     <span>© 2026 Universo Alternativo</span>
   </footer>
-`
+`;

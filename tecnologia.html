@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tecnologia - Universo Alternativo</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+    <script>
+      document.querySelector('#app').innerHTML = `
+        <header class="topo">
+          <div class="logo">
+            <span class="logo-icon">🌌</span>
+            <div>
+              <strong>UNIVERSO</strong>
+              <span>ALTERNATIVO</span>
+            </div>
+          </div>
+          <nav class="menu">
+            <a href="/">Início</a>
+            <a href="/jogos.html">🎮 Jogos</a>
+            <a href="/animes.html">📺 Animes</a>
+            <a href="/musica.html">🎵 Música</a>
+            <a href="/retro.html">📼 Retrô</a>
+            <a href="/filmes.html">🎬 Filmes</a>
+            <a href="/tecnologia.html">💻 Tecnologia</a>
+          </nav>
+        </header>
+
+        <main>
+          <section class="conteudo-pagina">
+            <h1>💻 Tecnologia</h1>
+            <p>Computadores, internet, programação e o mundo digital que molda o futuro.</p>
+            <div class="lista-itens">
+              <div class="item-card">
+                <img src="/images/tech1.jpg" alt="Tech 1" />
+                <h3>PC 386</h3>
+                <p>Anos 90</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/tech2.jpg" alt="Tech 2" />
+                <h3>Linux</h3>
+                <p>1991</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/tech3.jpg" alt="Tech 3" />
+                <h3>Internet Dial-Up</h3>
+                <p>Anos 90</p>
+              </div>
+              <div class="item-card">
+                <img src="/images/tech4.jpg" alt="Tech 4" />
+                <h3>Inteligência Artificial</h3>
+                <p>Atualidade</p>
+              </div>
+            </div>
+          </section>
+        </main>
+
+        <footer>
+          <div class="footer-logo">🌌 Universo Alternativo</div>
+          <p>Um universo criado para quem nunca parou de explorar.</p>
+          <span>© 2026 Universo Alternativo</span>
+        </footer>
+      `
+    </script>
+  </body>
+</html>
