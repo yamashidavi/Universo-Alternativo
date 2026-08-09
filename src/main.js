@@ -70,12 +70,12 @@ document.querySelector('#app').innerHTML = `
 
     <nav class="menu">
       <a href="/">Início</a>
-      <a href="/jogos.html">🎮 Jogos</a>
-      <a href="/animes.html">📺 Animes</a>
-      <a href="/musica.html">🎵 Música</a>
-      <a href="/retro.html">📼 Retrô</a>
-      <a href="/filmes.html">🎬 Filmes</a>
-      <a href="/tecnologia.html">💻 Tecnologia</a>
+      <a href="jogos.html">🎮 Jogos</a>
+      <a href="animes.html">📺 Animes</a>
+      <a href="musica.html">🎵 Música</a>
+      <a href="retro.html">📼 Retrô</a>
+      <a href="filmes.html">🎬 Filmes</a>
+      <a href="tecnologia.html">💻 Tecnologia</a>
     </nav>
   </header>
 
